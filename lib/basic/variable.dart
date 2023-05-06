@@ -49,10 +49,14 @@ void variable() {
   var9.add('Cinnamon'); // Unsupported operation: Cannot add to an unmodifiable list 에러 발생
   print(var9);
 
-  // const 는 변수에 할당할 때도 쓰일 수 있음
+  // const 는 변수에 할당 할 때도 쓰일 수 있음
   var var10 = const ['const 변수1', 'const 변수2'];
 }
 
 String getLateInitStr() {
   return '늦은 초기화 반환';
+}
+
+main(List<String> arguments) async {
+  variable();
 }
